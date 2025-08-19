@@ -12,7 +12,7 @@
 
         public function napTien($soTien) {
             $this->soDu += $soTien;
-            echo "Bạn đã nạp {$soTien} vào tài khoản<br>";
+            echo "Bạn đã nạp {$soTien} vào tài khoản<br>\n";
             echo "Số dư sau khi nạp: " . $this->soDu;
         }
 
@@ -21,23 +21,21 @@
                 echo "Số dư của bạn không đủ để rút";
             } else {
                 $this->soDu -= $soTien;
-                echo "Bạn đã rút {$soTien}<br>";
+                echo "Bạn đã rút {$soTien}<br>\n";
                 echo "Số dư sau khi rút: " . $this->soDu;
             }
         }
 
         public function hienThiThongTin() {
-            echo "{$this->soTaiKhoan}, 
-                    {$this->tenChuTaiKhoan}, 
-                    {$this->soDu}<br>";
+            echo "{$this->soTaiKhoan}, {$this->tenChuTaiKhoan}, {$this->soDu}<br>\n";
         }
     }
 
     $bankAccount = new BankAccount("12345", "Th41", 1000);
 
     $bankAccount->napTien(1000);
-    echo "<br>";
+    echo "<br>\n";
     $bankAccount->rutTien(500);
-    echo "<br>";
-    $bankAccount->hienThiThongTin();    
+    echo "<br>\n";
+    $bankAccount->hienThiThongTin();
 ?>
