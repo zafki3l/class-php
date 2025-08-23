@@ -1,24 +1,30 @@
-<?php 
-    class DongVat {
-
+<?php
+    class DongVat 
+    {
         public function Keu() {}
     }
 
-    class Meo extends DongVat {
+    class Meo extends DongVat 
+    {
 
-        public function Keu() {
+        public function Keu() 
+        {
             echo "Meo meo";
         }
     }
 
-    class Cho extends DongVat {
-        public function Keu() {
+    class Cho extends DongVat 
+    {
+        public function Keu() 
+        {
             echo "Gau gau";
         }
     }
 
-    class Ga extends DongVat {
-        public function Keu() {
+    class Ga extends DongVat 
+    {
+        public function Keu() 
+        {
             echo "AAAAAAAAAA";
         }
     }
@@ -33,5 +39,4 @@
     $cho->Keu();
     echo "<br>Con ga keu: ";
     $ga->Keu();
-
 ?>
